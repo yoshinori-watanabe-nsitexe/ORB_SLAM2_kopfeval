@@ -1,4 +1,5 @@
 
+git submodule update init
 #EIGEN
 git clone https://gitlab.com/libeigen/eigen.git
 pushd eigen
