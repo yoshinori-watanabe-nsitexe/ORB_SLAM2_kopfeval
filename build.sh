@@ -5,7 +5,7 @@ git clone https://gitlab.com/libeigen/eigen.git
 pushd eigen
 mkdir build
 pushd build
-cmake  ../ -DCMAKE_INSTALL_PREFIX=../eigen3
+cmake  ../ -DCMAKE_INSTALL_PREFIX=../../eigen3
 make install
 popd
 
@@ -27,7 +27,7 @@ popd
 
 #dataset
 mkdir dataset
-pushd pushd
+pushd dataset
 wget https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_rpy.tgz
 tar xvf rgbd_dataset_freiburg1_rpy.tgz
 popd
