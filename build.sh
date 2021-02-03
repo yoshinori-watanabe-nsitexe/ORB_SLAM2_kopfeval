@@ -1,5 +1,6 @@
 
-git submodule update init
+#git submodule update --init
+git clone -b for_eval_kopfi https://github.com/yoshinori-watanabe-nsitexe/ORB_SLAM2
 #EIGEN
 git clone https://gitlab.com/libeigen/eigen.git
 pushd eigen
