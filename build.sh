@@ -14,10 +14,11 @@ git clone -b 3.4 https://github.com/opencv/opencv.git
 git clone -b 3.4 https://github.com/opencv/opencv_contrib.git
 pushd opencv
 mkdir build
-cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ../
+pushd build
+cmake -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D EIGEN_INCLUDE_PATH=../../eigen3/include/eigen3 ../
 make -j4
 popd
-
+popd
 
 #ORB_SLAM2
 pushd ORB_SLAM2
