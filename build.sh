@@ -1,4 +1,4 @@
-export  PATH=/usr/local/bin:${PATH}
+export PATH=/usr/local/bin:${PATH}
 export LD_LIBRARY_PATH=/opt/gcc/6.2.0/linux/gcc-6.2.0_64/lib64:${LD_LIBRARY_PATH}
 
 #git submodule update --init
