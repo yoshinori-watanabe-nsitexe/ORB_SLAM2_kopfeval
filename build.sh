@@ -1,3 +1,5 @@
+export  PATH=/usr/local/bin:${PATH}
+export LD_LIBRARY_PATH=/opt/gcc/6.2.0/linux/gcc-6.2.0_64/lib64:${LD_LIBRARY_PATH}
 
 #git submodule update --init
 git clone -b for_eval_kopfi https://github.com/yoshinori-watanabe-nsitexe/ORB_SLAM2
@@ -11,8 +13,8 @@ make install
 popd
 
 #OPENCV
-git clone -b 3.4 https://github.com/opencv/opencv.git
-git clone -b 3.4 https://github.com/opencv/opencv_contrib.git
+git clone -b for_eval_kopfi https://github.com/ryuei-washida-nsitexe/opencv.git
+git clone -b for_eval_kopfi https://github.com/ryuei-washida-nsitexe/opencv_contrib.git
 pushd opencv
 mkdir build
 pushd build
