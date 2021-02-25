@@ -2,7 +2,7 @@ export PATH=/usr/local/bin:${PATH}
 export LD_LIBRARY_PATH=/opt/gcc/6.2.0/linux/gcc-6.2.0_64/lib64:${LD_LIBRARY_PATH}
 
 #git submodule update --init
-if [ ! -d ORB_SLAM2 ]; then
+if [ ! -f ORB_SLAM2/build.sh ]; then
     git clone -b for_eval_kopfi https://github.com/yoshinori-watanabe-nsitexe/ORB_SLAM2
 fi
 #EIGEN

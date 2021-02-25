@@ -15,25 +15,32 @@ echo "Cleaning Thirdparty/DBoW2 ..."
 cd Thirdparty/DBoW2
 rm -f lib/libDBoW2.so
 rm -f lib/libDBoW2.a
-cd build
-${CMAKE_CLEAN}
+if [ ! -d build ]; then
+  pushd build
+  ${CMAKE_CLEAN}
+  popd
+fi
 
-cd ../../g2o
+cd ../g2o
 
 echo "Cleaning Thirdparty/g2o ..."
 rm -f lib/libg2o.so
 rm -f lib/libg2o.a
-cd build
-${CMAKE_CLEAN}
+if [ ! -d build ]; then
+  pushd build
+  ${CMAKE_CLEAN}
+  popd
+fi
 
-cd ../../../
+cd ../../
 
 echo "Cleaning ORB_SLAM2 ..."
 rm -f lib/libORB_SLAM2.so
 rm -f lib/libORB_SLAM2.a
-cd build
-${CMAKE_CLEAN}
-
-cd ../
+if [ ! -d build ]; then
+  pushd build
+  ${CMAKE_CLEAN}
+  popd
+fi
 
 popd
