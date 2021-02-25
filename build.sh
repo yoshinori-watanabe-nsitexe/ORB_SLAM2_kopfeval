@@ -2,7 +2,7 @@ export PATH=/usr/local/bin:${PATH}
 export LD_LIBRARY_PATH=/opt/gcc/6.2.0/linux/gcc-6.2.0_64/lib64:${LD_LIBRARY_PATH}
 
 #git submodule update --init
-if [ ! -f ORB_SLAM2/build.sh ]; then
+if [ ! -d ORB_SLAM2 ]; then
     git clone -b for_eval_kopfi https://github.com/yoshinori-watanabe-nsitexe/ORB_SLAM2
 fi
 #EIGEN
@@ -11,7 +11,7 @@ if [ ! -d eigen ]; then
     pushd eigen
         mkdir -p build
         pushd build
-            cmake  ../ -DCMAKE_INSTALL_PREFIX=../../eigen3
+            cmake -DBUILD_SHARD_LIBS=OFF ../ -DCMAKE_INSTALL_PREFIX=../../eigen3
             make install
         popd
     popd
@@ -26,7 +26,7 @@ if [ ! -d opencv ]; then
         pushd opencv
             mkdir -p build
             pushd build
-                cmake -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D EIGEN_INCLUDE_PATH=../../eigen3/include/eigen3 ../
+                cmake -DBUILD_SHARED_LIBS=OFF -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D EIGEN_INCLUDE_PATH=../../eigen3/include/eigen3 ../
                 make -j4
             popd
         popd

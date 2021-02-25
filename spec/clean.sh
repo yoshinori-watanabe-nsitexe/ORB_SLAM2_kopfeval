@@ -15,7 +15,7 @@ echo "Cleaning Thirdparty/DBoW2 ..."
 cd Thirdparty/DBoW2
 rm -f lib/libDBoW2.so
 rm -f lib/libDBoW2.a
-if [ ! -d build ]; then
+if [ -d build ]; then
   pushd build
   ${CMAKE_CLEAN}
   popd
@@ -26,7 +26,7 @@ cd ../g2o
 echo "Cleaning Thirdparty/g2o ..."
 rm -f lib/libg2o.so
 rm -f lib/libg2o.a
-if [ ! -d build ]; then
+if [ -d build ]; then
   pushd build
   ${CMAKE_CLEAN}
   popd
@@ -37,7 +37,7 @@ cd ../../
 echo "Cleaning ORB_SLAM2 ..."
 rm -f lib/libORB_SLAM2.so
 rm -f lib/libORB_SLAM2.a
-if [ ! -d build ]; then
+if [ -d build ]; then
   pushd build
   ${CMAKE_CLEAN}
   popd
