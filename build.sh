@@ -41,7 +41,7 @@ popd
 #popd
 
 #dataset
-if [ ! -d dataset]; then
+if [ ! -d dataset ]; then
     mkdir dataset
     pushd dataset
         wget https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_rpy.tgz
