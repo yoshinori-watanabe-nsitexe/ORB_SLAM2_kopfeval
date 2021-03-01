@@ -22,3 +22,8 @@ pushd dataset
   echo "Expanding dataset ..."
   tar zxvf rgbd_dataset_freiburg1_rpy.tgz
 popd
+#Expand ORB Vocabulary
+echo "Expanding ORB vocabulary ..."
+pushd ORB_SLAM2/Vocabulary
+  tar -zxvf ORBvoc.txt.tar.gz
+popd
