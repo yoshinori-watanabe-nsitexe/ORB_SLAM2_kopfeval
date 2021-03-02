@@ -10,9 +10,9 @@ git clone -b for_eval_kopfi https://gitlab.com/ryuei-washida-nsitexe/eigen.git
 #Clone OPENCV
 pushd eigen
   echo "Cloning opencv ..."
-  git clone -b for_eval_kopfi https://github.com/ryuei-washida-nsitexe/opencv.git
+  git clone -b 3.4 https://github.com/opencv/opencv.git
   echo "Cloning opencv_contrib ..."
-  git clone -b for_eval_kopfi https://github.com/ryuei-washida-nsitexe/opencv_contrib.git
+  git clone -b 3.4 https://github.com/opencv/opencv_contrib.git
 popd
 #Download dataset
 mkdir -p dataset
