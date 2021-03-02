@@ -57,6 +57,153 @@ pushd eigen
         popd
         pushd modules
           ${CMAKE_CLEAN}
+          pushd intensity_transform
+	    ${CMAKE_CLEAN}
+          popd
+          pushd phase_unwrapping
+            ${CMAKE_CLEAN}
+          popd
+          pushd photo
+            ${CMAKE_CLEAN}
+          popd
+          pushd plot
+            ${CMAKE_CLEAN}
+          popd
+          pushd quality
+            ${CMAKE_CLEAN}
+          popd
+          pushd reg
+            ${CMAKE_CLEAN}
+          popd
+          pushd surface_matching
+            ${CMAKE_CLEAN}
+          popd
+          pushd xphoto
+            ${CMAKE_CLEAN}
+          popd
+          pushd alphamat
+            ${CMAKE_CLEAN}
+          popd
+          pushd dnn
+            ${CMAKE_CLEAN}
+          popd
+          pushd dnn_superres
+            ${CMAKE_CLEAN}
+          popd
+          pushd features2d
+            ${CMAKE_CLEAN}
+          popd
+          pushd fuzzy
+            ${CMAKE_CLEAN}
+          popd
+          pushd hfs
+            ${CMAKE_CLEAN}
+          popd
+          pushd img_hash
+            ${CMAKE_CLEAN}
+          popd
+          pushd imgcodecs
+            ${CMAKE_CLEAN}
+          popd
+          pushd line_descriptor
+            ${CMAKE_CLEAN}
+          popd
+          pushd saliency
+            ${CMAKE_CLEAN}
+          popd
+          pushd text
+            ${CMAKE_CLEAN}
+          popd
+          pushd videoio
+            ${CMAKE_CLEAN}
+          popd
+          pushd wechat_qrcode
+            ${CMAKE_CLEAN}
+          popd
+          pushd calib3d
+            ${CMAKE_CLEAN}
+          popd
+          pushd datasets
+            ${CMAKE_CLEAN}
+          popd
+          pushd highgui
+            ${CMAKE_CLEAN}
+          popd
+          pushd mcc
+            ${CMAKE_CLEAN}
+          popd
+          pushd objdetect
+            ${CMAKE_CLEAN}
+          popd
+          pushd rapid
+            ${CMAKE_CLEAN}
+          popd
+          pushd rgbd
+            ${CMAKE_CLEAN}
+          popd
+          pushd shape
+            ${CMAKE_CLEAN}
+          popd
+          pushd structured_light
+            ${CMAKE_CLEAN}
+          popd
+          pushd ts
+            ${CMAKE_CLEAN}
+          popd
+          pushd video
+            ${CMAKE_CLEAN}
+          popd
+          pushd videostab
+            ${CMAKE_CLEAN}
+          popd
+          pushd xfeatures2d
+            ${CMAKE_CLEAN}
+          popd
+          pushd xobjdetect/tools/waldboost_detector
+            ${CMAKE_CLEAN}
+          popd
+          pushd aruco
+            ${CMAKE_CLEAN}
+          popd
+          pushd bgsegm
+            ${CMAKE_CLEAN}
+          popd
+          pushd bioinspired
+            ${CMAKE_CLEAN}
+          popd
+          pushd ccalib
+            ${CMAKE_CLEAN}
+          popd
+          pushd dnn_objdetect
+            ${CMAKE_CLEAN}
+          popd
+          pushd dpm
+            ${CMAKE_CLEAN}
+          popd
+          pushd face
+            ${CMAKE_CLEAN}
+          popd
+          pushd gapi
+            ${CMAKE_CLEAN}
+          popd
+          pushd optflow
+            ${CMAKE_CLEAN}
+          popd
+          pushd stitching
+            ${CMAKE_CLEAN}
+          popd
+          pushd superres
+            ${CMAKE_CLEAN}
+          popd
+          pushd tracking
+            ${CMAKE_CLEAN}
+          popd
+          pushd stereo
+            ${CMAKE_CLEAN}
+          popd
+          pushd ximgproc
+            ${CMAKE_CLEAN}
+          popd
           pushd core
             ${CMAKE_CLEAN}
           popd
@@ -70,8 +217,19 @@ pushd eigen
             ${CMAKE_CLEAN}
           popd
         popd
-        pushd apps/version
-          ${CMAKE_CLEAN}
+        pushd apps
+          pushd version
+            ${CMAKE_CLEAN}
+          popd
+          pushd annotation
+            ${CMAKE_CLEAN}
+          popd
+          pushd visualisation
+            ${CMAKE_CLEAN}
+          popd
+          pushd interactive-calibration
+            ${CMAKE_CLEAN}
+          popd
         popd
       popd
     fi

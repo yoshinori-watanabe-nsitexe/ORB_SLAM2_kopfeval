@@ -10,7 +10,7 @@ echo "Configuring and building eigen3 ..."
 pushd eigen
   mkdir -p build
   pushd build
-    cmake -DBUILD_SHARD_LIBS=OFF ../ -DCMAKE_INSTALL_PREFIX=../../eigen3
+    cmake ../ -DCMAKE_INSTALL_PREFIX=../../eigen3
     make install
   popd
 popd
