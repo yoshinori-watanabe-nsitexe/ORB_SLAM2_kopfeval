@@ -7,6 +7,7 @@ rm -rf ORB_SLAM2
 #Delete EIGEN & opencv
 echo "Removing EIGEN & OpenCV ..."
 rm -rf eigen
+rm -rf eigen3
 #Delete dataset
 echo "Removing dataset ..."
 rm -rf dataset
