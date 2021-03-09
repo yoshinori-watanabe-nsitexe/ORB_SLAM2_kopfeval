@@ -1,7 +1,7 @@
 TARGET:=ORB_SLAM
 
-USER_INIT:=pushd ../; ./build_eigen.sh; ./build_opencv.sh; popd; pushd ../ORB_SLAM2/; ./build_DBoW2.sh; ./build_g2o.sh; popd
-USER_BUILD:=pushd ../ORB_SLAM2/; ./build_ORB_SLAM.sh; popd
+USER_INIT:=
+USER_BUILD:=pushd ../; ./build_eigen.sh; ./build_opencv.sh; popd; pushd ../ORB_SLAM2/; ./build_ORB_SLAM.sh; popd; pushd ../ORB_SLAM2/; ./build_DBoW2.sh; ./build_g2o.sh; popd
 USER_RUN:=cd  ../ORB_SLAM2 ; Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml ../dataset/rgbd_dataset_freiburg1_rpy
 USER_SLX_MODE_SWITCH:=rm -rf ../ORB_SLAM2/Examples/Monocular/mono_tum
 OPTIMISTIC_ANALYSIS:=0
