@@ -3,16 +3,14 @@
 set -e
 #Clone ORB_SLAM2
 echo "Cloning ORB_SLAM2 ..."
-git clone -b for_eval_kopfi https://github.com/yoshinori-watanabe-nsitexe/ORB_SLAM2
+git clone -b for_opencv2 https://github.com/yoshinori-watanabe-nsitexe/ORB_SLAM2
 #Clone EIGEN
 echo "Cloning EIGEN ..."
-git clone -b for_eval_kopfi https://gitlab.com/ryuei-washida-nsitexe/eigen.git
+git clone -b for_eval_kopfi_31 https://gitlab.com/ryuei-washida-nsitexe/eigen.git
 #Clone OPENCV
 pushd eigen
-  echo "Cloning opencv ..."
-  git clone -b 3.4 https://github.com/opencv/opencv.git
-  echo "Cloning opencv_contrib ..."
-  git clone -b 3.4 https://github.com/opencv/opencv_contrib.git
+  echo "Cloning opencv 2.4 ..."
+  git clone -b 2.4 https://github.com/opencv/opencv.git
 popd
 #Download dataset
 mkdir -p dataset
