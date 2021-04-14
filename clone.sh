@@ -9,7 +9,7 @@ echo "Cloning EIGEN ..."
 git clone -b for_eval_kopfi https://gitlab.com/ryuei-washida-nsitexe/eigen.git
 #Clone OPENCV
 pushd eigen
-  echo "Cloning opencv ..."
+  echo "Cloning opencv 3.4 ..."
   git clone -b 3.4 https://github.com/opencv/opencv.git
   echo "Cloning opencv_contrib ..."
   git clone -b 3.4 https://github.com/opencv/opencv_contrib.git
