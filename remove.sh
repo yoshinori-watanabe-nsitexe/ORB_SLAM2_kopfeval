@@ -5,7 +5,7 @@ set -e
 echo "Removing ORB_SLAM2 ..."
 rm -rf ORB_SLAM2
 #Delete EIGEN & opencv
-echo "Removing EIGEN 3.1 & OpenCV 2.4 ..."
+echo "Removing EIGEN & OpenCV ..."
 rm -rf eigen
 rm -rf eigen3
 #Delete dataset
