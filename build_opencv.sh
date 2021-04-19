@@ -9,7 +9,7 @@ pushd eigen
     mkdir -p build
     pushd build
       echo "Starting cmake for openCV 3.4 ..."
-      cmake -DBUILD_SHARED_LIBS=OFF -DWITH_IPP=OFF -DENABLE_PROFILING=ON -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -DEIGEN_INCLUDE_PATH=../../../eigen3/include/eigen3 ../
+      cmake -DBUILD_SHARED_LIBS=OFF -DWITH_IPP=OFF -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -DEIGEN_INCLUDE_PATH=../../../eigen3/include/eigen3 ../
       echo "Starting make for openCV 3.4 ..."
       make -j4
     popd

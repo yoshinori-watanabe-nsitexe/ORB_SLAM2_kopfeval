@@ -26,7 +26,7 @@ rm -rf eigen3
 
 pushd eigen
   pushd opencv
-    echo "Cleaning OpenCV ..."
+    echo "Cleaning OpenCV 3.4 ..."
     rm -rf lib
     rm -rf build
   popd
