@@ -3,10 +3,10 @@
 set -e
 #Clone ORB_SLAM2
 echo "Cloning ORB_SLAM2 ..."
-git clone -b for_eval_kopfi https://github.com/yoshinori-watanabe-nsitexe/ORB_SLAM2
+git clone -b for_SLX https://github.com/ryuei-washida-nsitexe/ORB_SLAM2.git
 #Clone EIGEN
 echo "Cloning EIGEN ..."
-git clone -b for_eval_kopfi https://gitlab.com/ryuei-washida-nsitexe/eigen.git
+git clone -b for_SLX https://gitlab.com/ryuei-washida-nsitexe/eigen.git
 #Clone OPENCV
 pushd eigen
   echo "Cloning opencv ..."
