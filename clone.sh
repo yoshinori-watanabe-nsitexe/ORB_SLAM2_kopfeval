@@ -3,7 +3,7 @@
 set -e
 #Clone ORB_SLAM2
 echo "Cloning ORB_SLAM2 ..."
-git clone -b for_SLX_v2 https://github.com/ryuei-washida-nsitexe/ORB_SLAM2.git
+git clone -b for_SLX_v2_wl https://github.com/ryuei-washida-nsitexe/ORB_SLAM2.git
 #Clone EIGEN
 echo "Cloning EIGEN ..."
 git clone -b for_SLX https://gitlab.com/ryuei-washida-nsitexe/eigen.git
@@ -23,5 +23,5 @@ popd
 #Expand ORB Vocabulary
 echo "Expanding ORB vocabulary ..."
 pushd ORB_SLAM2/Vocabulary
-  tar -zxvf ORBvoc.txt.tar.gz
+  tar -zxvf ORBvoc.tgz
 popd
